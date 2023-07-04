@@ -17,15 +17,6 @@ updateTime();
 
 setInterval(updateTime, 1000);
 
-
-
-
-
-
-
-
-
-
 for (var index = 0; index < projectData.length; index++) {
   var dataEl = projectData[index];
   if (dataEl === currentTime) {
