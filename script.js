@@ -17,6 +17,7 @@ updateTime();
 
 setInterval(updateTime, 1000);
 
+// If statement for present, future and past - colors
 for (var index = 0; index < projectData.length; index++) {
   var dataEl = projectData[index];
   if (dataEl === currentTime) {
