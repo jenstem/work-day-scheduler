@@ -7,7 +7,7 @@ var saveBtn = $('.saveBtn');
 
 var currentTime = dayjs();
 
-// where should this go? This isn't getting called
+
 // function stopBrowserDefault(e) {
 //   e.preventDefault();
 // }
