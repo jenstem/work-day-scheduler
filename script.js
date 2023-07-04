@@ -25,7 +25,7 @@ setInterval(updateTime, 1000);
 
 
 
-// needs work - flicks on for a moment - only change class for a split second
+
 for (var index = 0; index < projectData.length; index++) {
   var dataEl = projectData[index];
   if (dataEl === currentTime) {
