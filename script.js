@@ -13,7 +13,7 @@ function updateTime() {
   currentDay.text(formattedTime);
 }
 
-// stopBrowserDefault();
+
 
 updateTime();
 
