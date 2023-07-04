@@ -40,12 +40,10 @@ $(".saveBtn").on("click", function() {
   localStorage.setItem(hourID, textValue);
 })
 
-// values saved in local storage, need to print to DOM
+// Values saved in local storage, need to print to DOM
 $('.time-block').each(function(i) {
-  // For each time-block element, use the id to grab the related value from localstorage
-  // and set it as the text of the child <textarea>
-
-
+  // For each time-block element, the id grabs the related value from localstorage
+  // and sets it as the text of the child <textarea>
   var storeStorage9 = localStorage.getItem("hour-9");
   var storeStorage10 = localStorage.getItem("hour-10");
   var storeStorage11 = localStorage.getItem("hour-11");
