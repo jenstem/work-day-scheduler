@@ -1,6 +1,6 @@
 
 
-// in the html.
+
 
 $(function () {
 
