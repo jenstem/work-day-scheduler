@@ -13,8 +13,6 @@ function updateTime() {
   currentDay.text(formattedTime);
 }
 
-
-
 updateTime();
 
 setInterval(updateTime, 1000);
