@@ -20,7 +20,7 @@ setInterval(updateTime, 1000);
 
 
 
-// local storage. X
+
 
 
 
