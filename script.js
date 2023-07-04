@@ -42,7 +42,7 @@ $(".saveBtn").on("click", function() {
 
 // values saved in local storage, need to print to DOM
 $('.time-block').each(function(i) {
-  // for each time-block element, use the id to grab the related value from localstorage
+  // For each time-block element, use the id to grab the related value from localstorage
   // and set it as the text of the child <textarea>
 
 
