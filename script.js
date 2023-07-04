@@ -45,7 +45,7 @@ $('.time-block').each(function(i) {
   // for each time-block element, use the id to grab the related value from localstorage
   // and set it as the text of the child <textarea>
 
-  // element of textarea
+
   var storeStorage9 = localStorage.getItem("hour-9");
   var storeStorage10 = localStorage.getItem("hour-10");
   var storeStorage11 = localStorage.getItem("hour-11");
