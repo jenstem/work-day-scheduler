@@ -31,6 +31,7 @@ for (var index = 0; index < projectData.length; index++) {
   }
   }
 
+
 // Save Button
 $(".saveBtn").on("click", function() {
   var thisBtn = $(this);
