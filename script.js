@@ -9,7 +9,7 @@ var currentTime = dayjs();
 
 
 
-//   e.preventDefault();
+
 // }
 
 function updateTime() {
