@@ -32,15 +32,15 @@ THEN the saved events persist\
 
 ## Screenshots:
 
-![](https://github.com/jenstem/Password-Generator/blob/main/assets/passwordlength.png)
+![](https://github.com/jenstem/work-day-scheduler/blob/main/Assets/scheduler.png)
 *This is a screenshot of the Work Day Scheduler*
 ##
 
-![](https://github.com/jenstem/Password-Generator/blob/main/assets/prompts.png)
+![](https://github.com/jenstem/work-day-scheduler/blob/main/Assets/meeting.png)
 *This is a screenshot of an event typed in*
 ##
 
-![](https://github.com/jenstem/Password-Generator/blob/main/assets/passwordgen.png)
+![](https://github.com/jenstem/work-day-scheduler/blob/main/Assets/savebutton.png)
 *This is a screenshot of the save button*
 ##
 
