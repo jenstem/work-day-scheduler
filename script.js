@@ -19,7 +19,7 @@ setInterval(updateTime, 1000);
 
 
 
-// use the id in the containing time-block as a key to save the user input in
+
 // local storage. X
 
 
