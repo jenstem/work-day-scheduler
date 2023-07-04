@@ -17,16 +17,6 @@ updateTime();
 
 setInterval(updateTime, 1000);
 
-
-
-
-
-
-
-
-
-
-
 // How can Day.js be used to get the current hour in 24-hour time?
 //
 // TODO: Add code to get any user input that was saved in localStorage and set
