@@ -1,12 +1,14 @@
 $(function () {
 
-// variables
+// Variables
 var currentDay = $('#currentDay');
 var projectData = $('textarea');
 var saveBtn = $('.saveBtn');
 
+// For current time
 var currentTime = dayjs();
 
+// Current time in certain format
 function updateTime() {
   currentTime = dayjs();
   var formattedTime = currentTime.format("MMMM DD, YYYY hh:mm:ss A");
@@ -44,7 +46,7 @@ $(".saveBtn").on("click", function() {
 // Values saved in local storage, need to print to DOM
 $('.time-block').each(function(i) {
   // For each time-block element, the id grabs the related value from localstorage
-  // and sets it as the text of the child <textarea>
+  // and sets it as the text of the child
   var storeStorage9 = localStorage.getItem("hour-9");
   var storeStorage10 = localStorage.getItem("hour-10");
   var storeStorage11 = localStorage.getItem("hour-11");
