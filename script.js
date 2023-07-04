@@ -10,7 +10,7 @@ var currentTime = dayjs();
 
 
 
-// }
+
 
 function updateTime() {
   currentTime = dayjs();
