@@ -7,11 +7,6 @@ var saveBtn = $('.saveBtn');
 
 var currentTime = dayjs();
 
-
-
-
-
-
 function updateTime() {
   currentTime = dayjs();
   var formattedTime = currentTime.format("MMMM DD, YYYY hh:mm:ss A");
