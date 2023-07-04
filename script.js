@@ -28,7 +28,7 @@ for (var index = 0; index < projectData.length; index++) {
   }
   }
 
-// saveBtn - needs work - will be applied to every .saveBtn
+// Save Button
 $(".saveBtn").on("click", function() {
   var thisBtn = $(this);
   // this is related to scope and can change, what it points to can change based on its scope
