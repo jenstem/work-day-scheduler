@@ -22,7 +22,7 @@ setInterval(updateTime, 1000);
 
 
 
-// TODO: Add code to display the current date in the header of the page. X
+
 
 
 // needs work - flicks on for a moment - only change class for a split second
