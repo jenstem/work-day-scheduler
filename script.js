@@ -23,7 +23,7 @@ setInterval(updateTime, 1000);
 
 
 
-// block by comparing the id to the current hour. HINTS: How can the id
+
 // attribute of each time-block be used to conditionally add or remove the
 // past, present, and future classes?
 
