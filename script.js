@@ -1,51 +1,44 @@
-$(function () {
-
 // Variables
-var currentDay = $('#currentDay');
-var projectData = $('textarea');
-var saveBtn = $('.saveBtn');
+var currentDay = document.querySelector("#currentDay");
+//Selects entire text area for color coordination and for loop to compare time
+var projectData = document.querySelectorAll("textarea");
+var saveBtn = document.querySelector(".saveBtn");
 
-// For current time
+// For current time in certain format
 var currentTime = dayjs().format("dddd, MMMM D YYYY, h:mm:ss a");
 var rightNow = dayjs().format("HH");
 
 // Add textContent
 currentDay.textContent = currentTime;
 
-// For loop and If statement for present, future and past - colors
-  for (var index = 0; index < projectData.length; index++) {
-    var dataEl = projectData[index].dataset.time;
-    if (dataEl === rightNow) {
-      projectData[index].classList.add("present");
-    } else if (dataEl > rightNow) {
-      projectData[index].classList.add("future");
-    } else if (dataEl < rightNow) {
-      projectData[index].classList.add("past");
+// If statement for present, future and past - colors
+for (let i = 0; i < projectData.length; i++) {
+    var takeTime = projectData[i].dataset.time;
+    if (takeTime === rightNow) {
+        projectData[i].classList.add("present");
+    } else if (takeTime > rightNow) {
+        projectData[i].classList.add("future");
+    } else if (takeTime < rightNow) {
+        projectData[i].classList.add("past");
     }
-    }
-
+}
 
 // Save Button
 $(".saveBtn").on("click", function (event) {
-  // this is related to scope and can change, what it points to can change based on its scope
-  // this is refering to element that the event occurs on
-  // this = specific button that was clicked
-  var textValue = $(this).siblings(".description").val();
-  var hourID = $(this).parent().attr("id");
-  localStorage.setItem(hourID, textValue);
+    var textValue = $(this).siblings(".description").val();
+    var hourID = $(this).parent().attr("id");
+
+// Values saved in local storage
+    localStorage.setItem(hourID, textValue);
 });
 
-// Values saved in local storage, need to print to DOM
 // For each time-block element, the id grabs the related value from localstorage
-// and sets it as the text of the child
-  $("hour-9 .description").val(localStorage.getItem("hour-9"));
-  $("hour-10 .description").val(localStorage.getItem("hour-10"));
-  $("hour-11 .description").val(localStorage.getItem("hour-11"));
-  $("hour-12 .description").val(localStorage.getItem("hour-12"));
-  $("hour-13 .description").val(localStorage.getItem("hour-13"));
-  $("hour-14 .description").val(localStorage.getItem("hour-14"));
-  $("hour-15 .description").val(localStorage.getItem("hour-15"));
-  $("hour-16 .description").val(localStorage.getItem("hour-16"));
-  $("hour-17 .description").val(localStorage.getItem("hour-17"));
-
-});
+$("#hour-9 .description").val(localStorage.getItem("hour-9"));
+$("#hour-10 .description").val(localStorage.getItem("hour-10"));
+$("#hour-11 .description").val(localStorage.getItem("hour-11"));
+$("#hour-12 .description").val(localStorage.getItem("hour-12"));
+$("#hour-13 .description").val(localStorage.getItem("hour-13"));
+$("#hour-14 .description").val(localStorage.getItem("hour-14"));
+$("#hour-15 .description").val(localStorage.getItem("hour-15"));
+$("#hour-16 .description").val(localStorage.getItem("hour-16"));
+$("#hour-17 .description").val(localStorage.getItem("hour-17"));
