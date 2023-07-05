@@ -69,15 +69,6 @@ $('.time-block').each(function(i) {
   $("hour-15 .description").val(localStorage.getItem("hour-15"));
   $("hour-16 .description").val(localStorage.getItem("hour-16"));
   $("hour-17 .description").val(localStorage.getItem("hour-17"));
-  $("#hour-9").children("textarea").val(storeStorage9);
-  $("#hour-10").children("textarea").val(storeStorage10);
-  $("#hour-11").children("textarea").val(storeStorage11);
-  $("#hour-12").children("textarea").val(storeStorage12);
-  $("#hour-13").children("textarea").val(storeStorage13);
-  $("#hour-14").children("textarea").val(storeStorage14);
-  $("#hour-15").children("textarea").val(storeStorage15);
-  $("#hour-16").children("textarea").val(storeStorage16);
-  $("#hour-17").children("textarea").val(storeStorage17);
 })
 
 });
