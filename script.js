@@ -6,19 +6,11 @@ var projectData = $('textarea');
 var saveBtn = $('.saveBtn');
 
 // For current time
-var currentTime = dayjs();
-var rightNow = moment().format("HH")
+var currentTime = dayjs().format("dddd, MMMM D YYYY, h:mm:ss a");
+var rightNow = dayjs().format("HH");
 
-// Current time in certain format
-function updateTime() {
-  currentTime = dayjs();
-  var formattedTime = currentTime.format("MMMM DD, YYYY hh:mm:ss A");
-  currentDay.text(formattedTime);
-}
-
-updateTime();
-
-setInterval(updateTime, 1000);
+// Add textContent
+currentDay.textContent = currentTime;
 
 // For loop and If statement for present, future and past - colors
   for (var index = 0; index < projectData.length; index++) {
