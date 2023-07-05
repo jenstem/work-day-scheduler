@@ -45,16 +45,14 @@ setInterval(updateTime, 1000);
 
 
 // Save Button
-$(".saveBtn").on("click", function() {
-  var thisBtn = $(this);
+$(".saveBtn").on("click", function (event) {
   // this is related to scope and can change, what it points to can change based on its scope
   // this is refering to element that the event occurs on
   // this = specific button that was clicked
-  var siblingTextArea = thisBtn.siblings(".description");
-  var textValue = siblingTextArea.val();
-  var hourID = thisBtn.parent().attr('id');
+  var textValue = $(this).siblings(".description").val();
+  var hourID = $(this).parent().attr("id");
   localStorage.setItem(hourID, textValue);
-})
+});
 
 // Values saved in local storage, need to print to DOM
 // For each time-block element, the id grabs the related value from localstorage
