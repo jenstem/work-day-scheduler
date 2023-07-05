@@ -7,6 +7,7 @@ var saveBtn = $('.saveBtn');
 
 // For current time
 var currentTime = dayjs();
+var rightNow = moment().format("HH")
 
 // Current time in certain format
 function updateTime() {
@@ -20,16 +21,27 @@ updateTime();
 setInterval(updateTime, 1000);
 
 // If statement for present, future and past - colors
-for (var index = 0; index < projectData.length; index++) {
-  var dataEl = projectData[index].dataset.time;
-  if (dataEl === currentTime) {
-    projectData[index].classList.add("present");
-  } else if (dataEl > currentTime) {
-    projectData[index].classList.add("future");
-  } else if (dataEl < currentTime) {
-    projectData[index].classList.add("past");
-  }
-  }
+// for (var index = 0; index < projectData.length; index++) {
+//   var dataEl = projectData[index].dataset.time;
+//   if (dataEl === currentTime) {
+//     projectData[index].classList.add("present");
+//   } else if (dataEl > currentTime) {
+//     projectData[index].classList.add("future");
+//   } else if (dataEl < currentTime) {
+//     projectData[index].classList.add("past");
+//   }
+//   }
+
+  for (var index = 0; index < projectData.length; index++) {
+    var dataEl = projectData[index].dataset.time;
+    if (dataEl === rightNow) {
+      projectData[index].classList.add("present");
+    } else if (dataEl > rightNow) {
+      projectData[index].classList.add("future");
+    } else if (dataEl < rightNow) {
+      projectData[index].classList.add("past");
+    }
+    }
 
 
 // Save Button
@@ -48,15 +60,6 @@ $(".saveBtn").on("click", function() {
 $('.time-block').each(function(i) {
   // For each time-block element, the id grabs the related value from localstorage
   // and sets it as the text of the child
-  var storeStorage9 = localStorage.getItem("hour-9");
-  var storeStorage10 = localStorage.getItem("hour-10");
-  var storeStorage11 = localStorage.getItem("hour-11");
-  var storeStorage12 = localStorage.getItem("hour-12");
-  var storeStorage13 = localStorage.getItem("hour-13");
-  var storeStorage14 = localStorage.getItem("hour-14");
-  var storeStorage15 = localStorage.getItem("hour-15");
-  var storeStorage16 = localStorage.getItem("hour-16");
-  var storeStorage17 = localStorage.getItem("hour-17");
   $("hour-9 .description").val(localStorage.getItem("hour-9"));
   $("hour-10 .description").val(localStorage.getItem("hour-10"));
   $("hour-11 .description").val(localStorage.getItem("hour-11"));
