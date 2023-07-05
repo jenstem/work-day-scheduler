@@ -57,9 +57,8 @@ $(".saveBtn").on("click", function() {
 })
 
 // Values saved in local storage, need to print to DOM
-$('.time-block').each(function(i) {
-  // For each time-block element, the id grabs the related value from localstorage
-  // and sets it as the text of the child
+// For each time-block element, the id grabs the related value from localstorage
+// and sets it as the text of the child
   $("hour-9 .description").val(localStorage.getItem("hour-9"));
   $("hour-10 .description").val(localStorage.getItem("hour-10"));
   $("hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -69,6 +68,5 @@ $('.time-block').each(function(i) {
   $("hour-15 .description").val(localStorage.getItem("hour-15"));
   $("hour-16 .description").val(localStorage.getItem("hour-16"));
   $("hour-17 .description").val(localStorage.getItem("hour-17"));
-})
 
 });
