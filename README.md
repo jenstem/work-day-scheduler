@@ -4,7 +4,7 @@ Click [here](https://jenstem.github.io/work-day-scheduler/) to see the website.
 
 ## Description
 
-As a current student, I wanted to create a work day scheduler that would display the current date and time.  The scheduler would allow the user to see what was coming up on their current schedule by showing each time block in a different color for past, present and future.
+As a current student, I wanted to create a work day scheduler that would display the current date.  The scheduler would allow the user to see what was coming up on their current schedule by showing each time block in a different color for past, present and future.
 
 When the user types something in to their schedule and clicks the save button to the corresponding time block, the event is saved to local storage even if the user refreshes the page.
 
