@@ -1,3 +1,5 @@
+$(function () {
+
 // Variables
 var currentDay = document.querySelector("#currentDay");
 //Selects entire text area for color coordination and for loop to compare time
@@ -42,3 +44,5 @@ $("#hour-14 .description").val(localStorage.getItem("hour-14"));
 $("#hour-15 .description").val(localStorage.getItem("hour-15"));
 $("#hour-16 .description").val(localStorage.getItem("hour-16"));
 $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+
+});
